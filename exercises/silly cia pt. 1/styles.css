@@ -1,0 +1,36 @@
+html {
+    margin-left: 10px;
+    margin-right: 23px
+}
+
+h1 {
+    color: maroon;
+    font-family: Georgia;
+    text-align: center;
+}
+h2 {
+    font-family: Georgia;
+    text-align: center;
+}
+
+p {
+   line-height: 1.3;
+   font-size: 27px;
+}
+
+#upcase {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    float: left;
+    margin-right: 20px;
+}
