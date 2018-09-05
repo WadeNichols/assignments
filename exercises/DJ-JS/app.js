@@ -18,3 +18,11 @@ boxOne.addEventListener('dblclick', function() {
 window.addEventListener('wheel', function() { 
     boxOne.style.backgroundColor = 'orangered'
 }) 
+
+window.addEventListener('keydown', function (e) {
+    if (e.key === 'r')   {
+        boxOne.style.backgroundColor = 'red'
+    } else if (e.key === 'p') {
+        boxOne.style.backgroundColor = 'purple'
+    }
+})
