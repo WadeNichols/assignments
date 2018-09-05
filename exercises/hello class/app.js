@@ -1,1 +1,3 @@
-console.log('hello class')
+function printHi() {
+    console.log('Hello class')
+}

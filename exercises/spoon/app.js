@@ -14,16 +14,30 @@ nickName: 'Slim Ben',
      brand: 'sanuk',
      color: 'grey',
      size: 10.5,
- } ,
+    },
  age: 30,
  size: 'slim fit',
  canISay: function () {
     return "is " + this.nickName + "slimmer than a Slim Jim?"
- }
+    }
 }
  console.log(ben(canISay))
 
 var coffee = {
     isHot: true,
-    color: 'white and pink',
+    color: 'black',
+    temp: "hot, hot, hot!",
+    isDecafe: false,
+}
+
+var lights = {
+    boarderColor: 'white',
+    covorTransparency: 30,
+    bulbType: 'florescent',
+    energySufficent: true
+}
+
+var conputerScreens = {
+    howMany: 16,
+    
 }

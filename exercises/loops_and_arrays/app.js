@@ -43,3 +43,15 @@ var peopleWhoWantToSeeMadMaxFuryRoad = [
             console.log(peopleWhoWantToSeeMadMaxFuryRoad[i].name + "'s just a baby, keep " + pronoun + " out!")
           }
         }
+
+
+        var on = false;
+
+        var numOfSwiches = [2, 3, 2];
+        for (var i = 0; i < numOfSwiches.length; i++) {
+            if (numOfSwiches[i] % 2 !== 0) {
+                on = !on;
+            }
+        }
+
+        console.log(on)

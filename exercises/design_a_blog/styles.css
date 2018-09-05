@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    color: blanchedalmond;
+}
+
+body {
+    background-color: rebeccapurple;
+}
+
+.navbar{
+    position: fixed;
+    background-color: yellow;
+    height: 25px;
+    width: 100%;
+    color: black;
+}
+
+.facts-about-wade {
+    background-clip: white;
+    padding: 100px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 100px;
+    top: 35px;
+    height: 200px;
+    width: 500px;
+}
+
+.biography {
+    display: inline-block;
+    background-color: peru;
+    height: 100vw;
+    padding-top: 100px;
+    padding: 20px
+}
+
+.parent {
+    background-color: rosybrown;
+    height: 100vh;
+}
+
+.child {
+    background-clip: blue;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    bottom: 25px;
+}

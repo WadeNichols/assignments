@@ -34,3 +34,4 @@ if (person.name[0] === 'B') {
 if ((person.name[0] === 'B') && (person.age >= 18)) {
     console.log(person.name + 'is ' + person.age + ' years old and allowed')
 }
+

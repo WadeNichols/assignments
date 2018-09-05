@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.franceFlag {
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+}
+
+.franceRed {
+    background-color: red;
+    height: 100%;
+    width: 33.333%;
+    display: inline-block;
+}
+
+.franceWhite{
+    background-color: snow;
+    height: 100%;
+    width: 33.333%;
+    display: inline-block;
+}
+
+.franceBlue {
+    background-color: blue;
+    height: 100%;
+    width: 33.333%;
+    display: inline-block;
+   
+}
+
+.germanFlag {
+    display: inline-block;
+    height: 400px;
+    width: 100px;
+}
+
+.germanBlack {
+    background-color: black;
+    height: 33.333%;
+    width: 897%;
+    display: inline-block
+}
+
+.germanRed {
+    background-color: red;
+    display: inline-block;
+    height: 33.333%;
+    width: 897%;
+}
+
+.germanYellow {
+    background-color: yellow;
+    display: inline-block;
+    height: 33.333%;
+    width: 897%;
+} 
+
+.madagasgarFlag {
+    height: 100px;
+    width: 400px;
+}
+
+.madagasgarWhite {
+    background-color: purple;
+    height: 300%;
+    width: 33.333%;
+    display: inline-block;
+}
+
+.madagasgarRed {
+    background-color: orangered;
+    height: 150%;
+    width: 66.666%;
+    left: 33.333%;
+    top: 50%;
+    display: inline-block;
+}
+
+.madagasgarGreen {
+    background-color: green;
+    height: 150%;
+    width: 66.666%;
+    left: 33.333%;
+    display: inline-block;
+}
