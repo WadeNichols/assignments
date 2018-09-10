@@ -8,40 +8,40 @@ var lyrics = ["This", "hit", "that", "ice", "cold",
               "with", "Saint", "Laurent", "Gotta", "kiss", 
               "myself", "I'm", "so", "pretty"];
 
-
-// function printSong (lyrics) {
+//1
+function printSong (lyrics) {
     
-//     return lyrics.join(' ');
-// }
-//     console.log(printSong(lyrics))
+    return lyrics.join(' ');
+}
+    console.log(printSong(lyrics))
 
 
-// 2
-// function reverseLyrics(lyrics) {
+//2
+function reverseLyrics(lyrics) {
 
-//     return lyrics.slice().reverse().join(' ');
-// }
-//  console.log(reverseLyrics(lyrics))
+    return lyrics.slice().reverse().join(' ');
+}
+ console.log(reverseLyrics(lyrics))
 
 
-// 3
-// function everyOther(lyrics) {
-//     var lyricString = " ";
+//3
+function everyOther(lyrics) {
+    var lyricString = " ";
 
-//     for (var i = 0; i < lyrics.length; i++) {
-//         if (!(i % 2)) {
-//             lyricString += lyrics[i] + " ";
-//         }
-//     }   
-//     return lyricString;
-// }
-// console.log(everyOther(lyrics))
+    for (var i = 0; i < lyrics.length; i++) {
+        if (!(i % 2)) {
+            lyricString += lyrics[i] + " ";
+        }
+    }   
+    return lyricString;
+}
+console.log(everyOther(lyrics))
 
 
 // 4
 function switchLyrics (lyrics) {
     var output = [];
-    var counter = 0;
+    var coun ter = 0;
     for (var i = 0; i < lyrics.length; i++) {
         if (lyrics.length - 1 === i) {
             output.push(lyrics[i]);
@@ -57,13 +57,16 @@ function switchLyrics (lyrics) {
 }
 console.log(switchLyrics(lyrics))
 
-// OR
 
-function switchLyrics(lyrics) {
-    var lyricString = "";
-    for (var i = 1; i < lyrics.length; i += 2) {
-        lyricString += lyrics[i] + " " + lyrics[i - 1] + " ";
+
+///5
+function random(arr) {
+    var output = [];
+    var length = arr.length
+    for (var i = 0; i < length; i++) {
+        var getRandom = Math.floor(math.random() * arr.length);
+        output.push(arr[getRandom]);
+        arr.splice(getRandom, 1);
     }
-    return lyricString;
+    return output.join(' ');
 }
-console.log(switchLyrics(lyrics))

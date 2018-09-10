@@ -1,0 +1,29 @@
+html {
+    font-family: arial;
+    background-color: darkgrey;
+    padding: 1em;
+  }
+
+body {
+    background-image: url("https://images.alphacoders.com/515/515344.jpg");
+    background-size: 150% 100%;
+    color: black;
+    size: 1em;
+    padding: 1em;
+    border: 5px solid black; 
+  }
+
+.mushroom {
+  height: 8%;
+  width: 8%;
+}
+
+.bomb {
+  height: 12%;
+  width: 12%;
+}
+
+.fish {
+  height: 12%;
+  width: 12%;
+}

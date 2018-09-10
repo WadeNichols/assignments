@@ -1,6 +1,6 @@
 var rs = require('readline-sync');
 
-var name = rs. question("What is your name?\n");
+var name = rs.question("What is your name?\n");
 console.log("Hello " + name + ", it is nice to meet you.");
 
 var age = rs.question("How old are you?\n");

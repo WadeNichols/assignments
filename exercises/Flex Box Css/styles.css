@@ -1,0 +1,12 @@
+.test {
+    width: 200px;
+    height: 200px;
+    background: black;
+}
+
+@media (min-width: 1000px) {
+    .test {
+        background: purple;
+        width: 100%;
+    }
+}

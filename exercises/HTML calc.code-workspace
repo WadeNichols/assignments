@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "HTML-Calculator"
+		},
+		{
+			"path": "Notes"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "HTML-Calculator"
+	}
+}
