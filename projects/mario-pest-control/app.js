@@ -1,21 +1,3 @@
-var badGuys = [{
-    name: "goomba",
-    price: 5,
-    caught: 0
-  }, {
-    name: "bob-ombs",
-    price: 7,
-    caught: 0
-  }, {
-    name: "cheep cheep",
-    price: 11,
-    caught: 0
-  }];
-  
-
-
-
-
   sumTotal.addEventListener("submit", function(event){
     event.preventDefault()
     var caught1 = +document.getElementById('caught1').value

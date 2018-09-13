@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: SuperMarioGalaxy;
+    font-size: 50px;
+
+}
+
+.container {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header, footer {
+    background-color: gold;
+    height: 75px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    line-height: 170%;
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    color: red;
+}
+.bannerImage {
+    background-image: url("https://coursework.vschool.io/content/images/2015/07/luigi.png");
+    height: 95%;
+    width: 95%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.red {
+    flex: 1.1;
+    background-color: red;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+
+}
+
+.white {
+    flex: .5;
+}
+
+.alth1 {
+
+}
+
+p {
+    height: 300px;
+    width: 50%;
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}

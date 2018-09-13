@@ -11,6 +11,7 @@ body {
     height: 100%;
     font-size: 16pt;
     margin: 0px;
+    background-color: #185008;
 
 }
 .navBar { 
@@ -73,7 +74,7 @@ a:hover {
     top: -3in;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 900px) {
     .go-kart {
         position: relative;
         left: 20px;
@@ -86,18 +87,25 @@ a:hover {
         height: 60%;
         width: 50%;
         position: relative;
+        top: -20px;
     }
     .product {
         margin-left: 20px;
-        margin-top: 60px;
+        margin-top: 70px;
         width: 200px;
         height: 200px;
     }
     body {
         display: flex;
         flex-direction: column;
+        background-color: 	#185008;
     }
     .product-container {
         flex-direction: column;
+        display: flex;
+
     }
-}
+    .product2 {
+        position: relative;
+        top: 0px;
+    }}
