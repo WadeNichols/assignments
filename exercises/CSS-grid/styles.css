@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    font-size: 30px;
+    margin: .75;
+    
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 20px;
+    width: 700px;
+    height: 500px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    /*(same as writtting ^)
+    border-style: solid;
+    border-width: 5px;
+    border-color: white; */
+    border-radius: 20px;
+}
+.one{
+    background-color: red;
+    grid-column: 1 / 3;
+
+}
+.two{
+    background-color: blue;
+    grid-column: 3 / 5;
+}
+.three{
+    background-color: green;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+.four{
+    background-color: purple;
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+}
+.five{
+    background-color: yellow;
+    grid-row: 3 / 4;
+    grid-column: 1 / 5;
+
+}
+.six{
+    background-color: red;
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+}
+.seven{
+    background-color: blue;
+    grid-row: 2 / 4;
+    grid-column: 1 / 3
+
+}
+.eight{
+    background-color: green;
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+    
+}
+.nine{
+    background-color: rebeccapurple;
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+}
+.ten{
+    background-color: rebeccapurple;
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+}
+.container2{
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 20px;
+    width: 350px;
+    height: 900px;
+}
+.eleven {
+    background-color: red;
+}
+.twelve {
+    background-color: blue;
+}
+.thirteen{
+    background-color: red;
+}
+.fourteen{
+    background-color: blue;
+}
+.fifteen{
+    background-color: red;
+}
+.sixteen{
+    background-color: blue;
+}
+.seventeen{
+    background-color: red;
+}
+.eighteen{
+    background-color: blue;
+}
+.ninteen{
+    background-color: red;
+}
+.twenty{
+    background-color: blue;
+}
+.twentyone{
+    background-color: red;
+}
+.twentytwo{
+    background-color: blue;
+}
+
+@media (min-width: 700px) {
+    .container2{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 20px;
+        width: 450px;
+        height: 350px;
+    }
+    .fifteen{
+        background-color: blue;
+    }
+    .sixteen{
+        background-color: red;
+    }
+    .seventeen{
+        background-color: blue;
+    }
+    .eighteen{
+        background-color: red;
+    }
+}
