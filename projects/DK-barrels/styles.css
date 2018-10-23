@@ -74,6 +74,9 @@ a:hover {
     top: -3in;
 }
 
+p {
+    font-size: 10pt;
+}
 @media (max-width: 900px) {
     .go-kart {
         position: relative;

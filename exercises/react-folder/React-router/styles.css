@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    padding: 3px;
+    text-decoration-line: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-card-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 50%;
+    border: 1px solid grey;
+    padding: 6px;
+}
+
+.service-card:hover {
+    background-color: orange;
+}

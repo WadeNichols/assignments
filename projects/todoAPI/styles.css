@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: SuperMarioGalaxy;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    display: block;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+input {
+    margin: 1px 3px;
+}
+
+header {
+    padding: 1em;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+form {
+    display: inline-block;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+.todo-item-container {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    padding: 1em;
+    background: rgba(100, 100, 100, .5);
+    border: 1px solid white;
+}
+
+.todo-item-container p {
+    padding: 3px 0;
+}
+
+.todo-item-container button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    background: rgba(248, 100, 100, 0.9);
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+@media (min-width: 600px) {
+    ul {
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .todo-item-container {
+        width: 50%;
+        flex: 0 1 auto;
+    }
+}
+
+@media (min-width: 900px) {
+    form {
+        flex-direction: row;
+    }
+
+    ul {
+        width: 80%;
+    }
+
+    .todo-item-container {
+        width: 33%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    ul {
+        width: 65%;
+    }
+
+    .todo-item-container {
+        width: 25%;
+    }
+}

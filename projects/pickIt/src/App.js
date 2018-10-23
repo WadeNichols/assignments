@@ -1,25 +1,43 @@
-import React from 'react'
-import Tabs from './Tabs'
+import React from "react";
+
+//THIRD PARTY
+import Particles from "react-particles-js";
+
+//MY COMPONENTS
+import Search from "./Search";
+import About from "./About";
+import Header from "./Header";
+import Welcome from "./Welcome";
+
+import { Link, Switch, Route } from "react-router-dom";
 
 function App() {
-    return (
-        <div>
-            <header>
-                <h1>pickIt</h1>
-                <nav>
-                    <h4>Home</h4>
-                    <h4>Artist</h4>
-                    <h4>Song</h4>
-
-                </nav>
-            </header>
-            <Tabs />
-            <br/>
-            <footer>
-                ©2018
-            </footer>
-        </div>
-    )
+  return (
+    <div className="wrapper">
+      <div className="app-container">
+        <Particles
+          className="particle"
+          params={{
+            particles: {
+              line_linked: {
+                shadow: {
+                  enable: false,
+                  color: "#555",
+                  blur: 0
+                }
+              }
+            }
+          }}
+        />
+        <Switch>
+          <Route exact path="/" component={Welcome} />
+          <Route path="/search" component={Search} />
+          <Route exact path="/about" component={About} />
+        </Switch>
+        <footer>©2018</footer>
+      </div>
+    </div>
+  );
 }
 
 export default App;

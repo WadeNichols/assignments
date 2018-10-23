@@ -1,0 +1,11 @@
+.box{
+  display: grid;
+  width: 200px;
+  height: 200px;
+}
+
+.box-container{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+
+}

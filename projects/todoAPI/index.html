@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <title>To-do Lits</title>
+</head>
+
+<body>
+    <header>
+        <h1>My To-Do List</h1>
+    </header>
+    <section>
+        <form id="add-form">
+            <div>
+                <label>Title:</label>
+                <input name="title" type="text" placeholder="Title">
+            </div>
+            <div>
+                <label>Description:</label>
+                <input name="description" type="text" placeholder="Description">
+            </div>
+            <div>
+                <label>Price:</label>
+                <input name="price" type="number" placeholder="Price">
+            </div>
+            <div>
+                <button>+ Add To List</button>
+            </div>
+        </form>
+        <ul id="todo-list"></ul>
+    </section>
+    <script src="./app.js"></script>
+</body>
+
+</html>

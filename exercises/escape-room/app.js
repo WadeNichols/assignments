@@ -42,5 +42,5 @@ while(true) {
         //do this open door
     } else if (selection === 2) {
         //put hand in hole
-    }   break(to break out of loop)
+    }   break //to break out of loop)
 }
