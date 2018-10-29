@@ -1,13 +1,12 @@
 * {
-  background-color: red;
+  margin: 0
 }
 
 /* Header styling  */
-.nav {
+.navbar {
   display: flex;
-  justify-content: space-between;
-
-  
+  justify-content: flex-start;
+  word-spacing: 10px
 }
 
  /* Body styling */
