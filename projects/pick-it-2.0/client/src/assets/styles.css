@@ -1,0 +1,20 @@
+* {
+  background-color: red;
+}
+
+/* Header styling  */
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  
+}
+
+ /* Body styling */
+
+
+ /* Footer styling */
+ footer {
+   position: fixed;
+   bottom: 0
+ }
