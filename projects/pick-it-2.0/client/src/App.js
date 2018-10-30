@@ -21,6 +21,7 @@ export default function App() {
         <Route path="/search" component={Search} />
         <Route exact path="/how-to" component={HowTo} />
         <Route path="/favorites" component={Favorites} />
+          <Favorites />
       </Switch>
       <footer>©2018</footer>
     </div>

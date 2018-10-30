@@ -1,16 +1,33 @@
 * {
-  margin: 0
+  margin: 0;
 }
 
 /* Header styling  */
 .navbar {
-  display: flex;
+  /* display: flex; */
   justify-content: flex-start;
-  word-spacing: 10px
+}
+
+.nav {
+  margin: 0 8px 5px 8px;
 }
 
  /* Body styling */
+.results-wrapper {
+  height: 80vh;
+  width: 40vw;
+  overflow: auto;
+  margin-top: 5px;
+}
 
+.favorite-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+ul {
+  line-height: 20px
+}
 
  /* Footer styling */
  footer {
