@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HowTo() {
   return (
-    <body>
+    <body className="howTo-wrapper">
       <h1>How To Read Tabs</h1>
       <h4>Understanding Tablature</h4>
       <p>
@@ -36,37 +36,37 @@ export default function HowTo() {
         <p className="code">
           <span>e</span>
           <span>|</span>
-          <span>--------------------------------------------</span>
+          <span>--------------------------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>B</span>
           <span>|</span>
-          <span>--------------------------------------------</span>
+          <span>--------------------------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>G</span>
           <span>|</span>
-          <span>--------------------------------------------</span>
+          <span>--------------------------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>D</span>
           <span>|</span>
-          <span>--------------------------------------------</span>
+          <span>--------------------------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>A</span>
           <span>|</span>
-          <span>--------------------------------------------</span>
+          <span>--------------------------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>E</span>
           <span>|</span>
-          <span>--------------------------------------------</span>
+          <span>--------------------------------------</span>
           <span>|</span>
         </p>
       </code>
@@ -98,37 +98,37 @@ export default function HowTo() {
         <p className="code">
           <span>e</span>
           <span>|</span>
-          <span>---------2----------------------------------</span>
+          <span>---------2----------------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>B</span>
           <span>|</span>
-          <span>-------3---3--------------------------------</span>
+          <span>-------3---3--------------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>G</span>
           <span>|</span>
-          <span>-----2-------2------------------------------</span>
+          <span>-----2-------2------------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>D</span>
           <span>|</span>
-          <span>---0----------------------------------------</span>
+          <span>---0----------------------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>A</span>
           <span>|</span>
-          <span>--------------------------------------------</span>
+          <span>--------------------------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>E</span>
           <span>|</span>
-          <span>--------------------------------------------</span>
+          <span>--------------------------------------</span>
           <span>|</span>
         </p>
       </code>
@@ -143,37 +143,37 @@ export default function HowTo() {
         <p className="code">
           <span>e</span>
           <span>|</span>
-          <span>--0--0--0--2--2-----------------------------</span>
+          <span>--0--0--0--2--2-----------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>B</span>
           <span>|</span>
-          <span>--0--0--2--3--3-----------------------------</span>
+          <span>--0--0--2--3--3-----------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>G</span>
           <span>|</span>
-          <span>--1--1--2--2--2-----------------------------</span>
+          <span>--1--1--2--2--2-----------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>D</span>
           <span>|</span>
-          <span>--2--2--2--0--0-----------------------------</span>
+          <span>--2--2--2--0--0-----------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>A</span>
           <span>|</span>
-          <span>--2--2--0--x--x-----------------------------</span>
+          <span>--2--2--0--x--x-----------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>E</span>
           <span>|</span>
-          <span>--0--0--x--x--x-----------------------------</span>
+          <span>--0--0--x--x--x-----------------------</span>
           <span>|</span>
         </p>
       </code>
@@ -267,37 +267,37 @@ export default function HowTo() {
         <p className="code">
           <span>e</span>
           <span>|</span>
-          <span>--------------------------------------------</span>
+          <span>--------------------------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>B</span>
           <span>|</span>
-          <span>--------------------------------------------</span>
+          <span>--------------------------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>G</span>
           <span>|</span>
-          <span>-----------------------9-11-11h12-12p11-----</span>
+          <span>-----------------------9-11-11h12-12--</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>D</span>
           <span>|</span>
-          <span>-9-9h11--11p9--9-11/12----------------------</span>
+          <span>-9-9h11--11p9--9-11/12----------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>A</span>
           <span>|</span>
-          <span>--------------------------------------------</span>
+          <span>--------------------------------------</span>
           <span>|</span>
         </p>
         <p className="code">
           <span>E</span>
           <span>|</span>
-          <span>--------------------------------------------</span>
+          <span>--------------------------------------</span>
           <span>|</span>
         </p>
       </code>

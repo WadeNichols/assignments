@@ -13,9 +13,23 @@
 }
 
  /* Body styling */
-.results-wrapper {
+.view-wrapper {
   height: 80vh;
   width: 40vw;
+  overflow: auto;
+  margin-top: 5px;
+}
+
+.howTo-wrapper {
+  height: 80vh;
+  width: 60vw;
+  overflow: auto;
+  margin-top: 5px;
+}
+
+.favorites-wrapper {
+  height: 80vh;
+  width: 60vw;
   overflow: auto;
   margin-top: 5px;
 }
@@ -23,6 +37,15 @@
 .favorite-button {
   display: flex;
   flex-direction: row-reverse;
+}
+
+.delete-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.check-box {
+      margin-right: 5px
 }
 
 ul {

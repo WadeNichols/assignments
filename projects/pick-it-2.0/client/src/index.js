@@ -5,10 +5,13 @@ import "./assets/styles.css"
 
 import App from './App';
 import { BrowserRouter } from "react-router-dom";
+import Favorites from "./Favorites"
 
 render(
     <BrowserRouter>
-        <App />
+        <Favorites>
+            <App />
+        </Favorites>
     </BrowserRouter>,
     document.getElementById("root")
 )

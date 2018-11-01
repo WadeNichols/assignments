@@ -6,7 +6,7 @@ import Search from "./Search"
 import HowTo from "./HowTo"
 import Header from "./Header"
 import Welcome from "./Welcome"
-import Favorites from "./Favorites"
+import FavoritesList from "./FavoritesList"
 
 
 import { Switch, Route } from "react-router-dom"
@@ -20,8 +20,7 @@ export default function App() {
         <Route exact path="/" component={Welcome} />
         <Route path="/search" component={Search} />
         <Route exact path="/how-to" component={HowTo} />
-        <Route path="/favorites" component={Favorites} />
-          <Favorites />
+        <Route path="/favorites" component={FavoritesList} />
       </Switch>
       <footer>©2018</footer>
     </div>

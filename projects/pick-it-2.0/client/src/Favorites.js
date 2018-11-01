@@ -1,8 +1,9 @@
 import React, { Component, createContext } from 'react'
 import axios from "axios"
 
-export const TabContext = createContext();
-const tabsUrl = "/api/tabs"
+
+export const FavoritesContext = createContext();
+const favoritesUrl = "/api/tabs"
 
 export default class Favorites extends Component {
     constructor() {
@@ -10,27 +11,52 @@ export default class Favorites extends Component {
         this.state = {
             loading: true,
             err: null,
-            favorites: []
+            favorites: [],
+            data: []
         }
     }
 
-    _getTabData(url) {
+    _getFavoritesData(url) {
         return axios.get(url).then(response => response.data)
     }
-    _handleTabData(favorites) {
-        return this._getTabData(tabsUrl)
-            .then(tabs => (
+    _handleFavoritesData() {
+        return this._getFavoritesData(favoritesUrl)
+            .then(favorites => (
                 [
-                   (favorites)
+                   ...favorites
                 ]
             ))
     }
+    handleChecked(id) {
+        return e => {
+          this.setState(({ data }) => ({
+            data: data.map(
+              song => (song.id == id ? { ...song, selected: !song.selected } : song)
+            )
+          }));
+        };
+      }
+    deleteFavorite() {
+        const selectedSongs = this.state.data.filter(song => song.selected);
+        const deletes = selectedSongs.map(song => {
+          axios
+            .delete(`/api/tabs/${song._id}`)
+            .then(response => {
+              console.log(response);
+            })
+            .catch(err => {
+              console.log(err);
+            });
+        });
+        Promise.all(deletes).then(response => console.log(response));
+      }
+ 
     componentDidMount() {
-        this._handleTabData()
-        .then(tabs => this.setState ({
+        this._handleFavoritesData()
+        .then(favorites => this.setState ({
             loading: false,
             err: null,
-            favorites: []
+            favorites
         }))
         .catch(err => this.setState ({
             err
@@ -38,33 +64,18 @@ export default class Favorites extends Component {
     }
     render() {
         const props = {
-            toggleCollection: this._toggleCollection,
             ...this.state
         }
         return (
-            <TabContext.Provider value={props}>
+            <FavoritesContext.Provider value={props}>
                 {this.props.children}
-            </TabContext.Provider>
+            </FavoritesContext.Provider>
         )
     }
 }
 
-export const withTabContext = Comp => props => (
-    <TabContext.Consumer>
+export const withFavoritesContext = Comp => props => (
+    <FavoritesContext.Consumer>
         {value => <Comp {...value} {...props} />}
-    </TabContext.Consumer>
+    </FavoritesContext.Consumer>
 )
-
-
-
-
-
-// import React from 'react'
-
-
-// export default function Favorites() {
-//     return (
-//         <Favorites />
-//     )
-
-// }

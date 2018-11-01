@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Header from "./Header";
 import Idle from "./Idle";
 import Loading from "./Loading";
 import Error from "./Error";
@@ -77,20 +76,23 @@ export default class Search extends Component {
       })
     );
     Promise.all(posts).then(response => console.log(response));
-    // axios
-    // .post("/api/tabs", this.state)
-    // .then(response => alert("Tabs have been added to your favorites"))
   }
+
+
   render() {
     const { idle, loading, err, data } = this.state;
     const tabList = this.state.data.map(item => (
       <div key={item.id}>
         <input
+          className="check-box"
           onChange={this.handleChecked(item.id)}
           value={item.selected}
           type="checkbox"
         />
-        <a href={`http://www.songsterr.com/a/wa/song?id=${item.id}`}>
+        <a
+          target="_blank"
+          href={`http://www.songsterr.com/a/wa/song?id=${item.id}`}
+        >
           {item.title}
         </a>
       </div>
@@ -108,7 +110,7 @@ export default class Search extends Component {
         <Idle idle={idle}>
           <Loading loading={loading}>
             <Error err={err}>
-              <div className="results-wrapper">
+              <div className="view-wrapper">
                 <div className="favorite-button">
                   <button onClick={this.handleFavorites}>+ to Favorites</button>
                 </div>
