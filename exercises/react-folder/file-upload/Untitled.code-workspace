@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "models"
+		},
+		{
+			"path": "temp"
+		},
+		{
+			"path": "client"
+		},
+		{
+			"path": "file-upload"
+		},
+		{
+			"path": "node_modules"
+		}
+	]
+}
