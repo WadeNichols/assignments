@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+}
+
+/* Header styling */
+.header {
+  color: white;
+  background-color: #006699;
+  height: 60px;
+}
+
+.pickIt {
+  font-size: 40pt
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.nav {
+  margin: 0 8px 5px 8px;
+  background-color: #006699;
+  border: none;
+  color: white;
+  padding: 13px 23px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-box {
+  margin-top: 5px
+}
+
+/* styling elements */
+h1, h4 {
+  padding: 10px 0
+}
+
+p {
+  line-height: 20px;
+  font-size: 18px;
+}
+
+ /* Body styling */
+.view-wrapper {
+  height: 80vh;
+  width: 50vw;
+  overflow: auto;
+  margin-top: 5px;
+  background-color: beige
+}
+
+.howTo-wrapper {
+  height: 80vh;
+  width: 70%;
+  overflow: auto;
+  margin-top: 5px;
+}
+
+.favorites-wrapper {
+  height: 80vh;
+  width: 60vw;
+  overflow: auto;
+  margin-top: 5px;
+}
+
+.welcome-button {
+  background-image: url("./pick-note.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  color: #006699;
+  width: 46em;
+  height: 389pt;
+  margin-left: 10em;
+  border: solid;
+}
+.welcome-button:hover {
+  cursor: pointer;
+}
+
+.color-welcome-box {
+  width: 15em;
+  height: 20em;
+  border-style: solid;
+  border-color: red;
+  background-color: red;
+}
+.color-box-container {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-left: 15em;
+  margin-top: -30em;
+  z-index: -12;
+}
+
+.welcome-note {
+  margin-top: 6em;
+  z-index: 12;
+}
+
+.favorite-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.delete-button {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.search-button {
+  color: blue
+}
+
+.check-box {
+      margin-right: 5px
+}
+
+ul {
+  line-height: 20px
+}
+
+.video {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px 0 10px 10px
+}
+
+ /* Footer styling */
+ footer {
+   position: fixed;
+   bottom: 0
+ }

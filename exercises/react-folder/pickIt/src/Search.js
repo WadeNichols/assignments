@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import axios from "axios";
-import Scrollspy from "react-scrollspy";
 import Header from "./Header";
 
 const tabUrl = `https://vschool-cors.herokuapp.com?url=http://www.songsterr.com/a/ra/songs.json?pattern=`;

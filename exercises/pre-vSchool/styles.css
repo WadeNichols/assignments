@@ -1,0 +1,36 @@
+html, body{
+    text-align: center;
+    font-family: serif;
+    background-color: floralwhite;
+}
+
+h1 {
+    color: brown;
+    font-size: 4em;
+}
+.altHeader {
+    font-size: 1.75em;
+    color: firebrick;
+}
+
+ol {
+    font-size: 3;
+    font-style: normal;
+    color: darkred;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+img{
+    width: 300px;
+    height: auto;
+}
+
+button{
+	background-color: #B6B6B7;
+	outline-color: #D5D5D7;
+	border-style: groove;
+	font-family: serif;
+	width: 145px;
+	height: 20px;
+}

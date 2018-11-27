@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    
+
+}
+.container{
+    display: grid;
+    grid-template-rows: auto;
+}
+header{
+    height:30vh;
+}
+.headTop{
+    background-image: url(../resources/enso.svg) ,url(../resources/gridlines-opaque.png) , url(../resources/huntington.jpg);
+
+
+    
+    
+}
+main{
+    background-color: white;
+}
+.first{
+    background-color: white;
+}
+.htmlCssDownload{
+    background-color: white;
+}
+.road{
+    background-color: white;
+}
+.soWhat{
+    background-color: white;
+}
+.participation{
+    background-color: rgba(138,188,159,0.5);
+}
+.benifits{
+    background-color: rgba(138,188,159,0.5);
+}
+.requirments{
+    background-color: white;
+}
+.contents{
+    margin:30px;
+}
+
+aside{
+    background-color: antiquewhite;
+    display: grid;
+    grid-gap:inherit;
+    grid-row:4/5;
+}
+.shoutOutBoard{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: ;
+    background-color: lightgrey;
+}
+.card{
+    display: flex;
+}
+.resourcesBoard{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgba(138,188,159,0.5);
+}
+footer{
+    display: grid;
+    background-color: rgba(138,188,159,0.5);
+    grid-template-rows: 2fr 1fr;
+}
+
+.footerBanner{
+
+}
+.social{
+    display: grid;
+    grid-template-columns: (5, 1fr);
+}

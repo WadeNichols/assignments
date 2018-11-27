@@ -1,0 +1,5 @@
+var interests = ['playing guitar', 'reading', 'crocheting', 'magic', 'food']
+
+for (var i = 0; i < interests.length; i++) {
+    document.getElementById('aboutWade).innerHTML
+}

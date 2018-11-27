@@ -1,0 +1,76 @@
+ things ive tried for my html javascript
+ 
+  <button id="textChanger">click me to change the text</button>
+        <div id="firstDiv">this text will change on button click</div>
+        
+        <button id="textAppender">Click me to append some text</button>
+        <div id="secondDiv">You are...</div>
+        
+        <button id="htmlAdder">Click to create HTML</button>
+        <div id="thirdDiv"></div>
+        
+and this is the script apps.js part
+ 
+ document.getElementById("textChanger").onclick = function () {
+    document.getElementById("firstDiv").innerHTML = "Text is changed!!!!;
+}
+
+document.getElementById("textAppender").onclick = function() {
+    document.getElementById("secondDiv").innerHTML += "great"
+}
+
+document.getElementById("htmlAdder").onclick = function () {
+    document.getElementById("thirdDiv").innerHTML = "This wont work"
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <button onclick="document.get ElementById('demo').innerHTML = Date()">Click to translate"</button>
+
+var (var = i; i < button onclick)
+
+var a = 0;
+var b = 1;
+
+if (a>b) { 
+    console.log('a is greater than b')
+} 
+else if (a!==b) { 
+    consolse.log('a is the same as b')
+} 
+else {  
+    consolse.log('a is less than b')
+
+button onclick = "document.get ElementById('demo').innerHTML = Date()">Click to translate"</button>
+    
+var buttonClick = 
+
+if (var = i; i === buttonClick) {
+    console.log("Lo siento, no habla español")
+} else {
+    console.log('demo')
+    
+    function myFunction(button onclick) {
+        alert:('This is my function.');
+    };
+    
+    
+    var myButton = 'Click for Spanish translation';
+    var newString = myButton.replace('Click for Spanish tralsation', 'Haga clic para la traducción al inglés');
+    console.log(newString);
+    
+    
+ <!DOCTYPE html>
+<html> 
+     <body>
+     <p>CLick for Spanish Translation</p>
+     <button onclick="myFunction()">Click me</button>
+     
+    
+    
+    *****<button onclick="alert('Lo siento, no hablamos español');">Click for Spanish Translation</button>******
