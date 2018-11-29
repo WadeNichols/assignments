@@ -1,99 +1,206 @@
-* {
-    margin: 0;
+/* Media breakpoint 1132 width*/
+@font-face {
+    font-family: arrow;
+    src: url(../fonts/verdemoderna.ttf);
+}
+
+html {
     box-sizing: border-box;
-
-
+}
+*,
+*:before, 
+*:after {
+    box-sizing: inherit;
 }
 
-.container {
-    display: grid;
-    grid-template-rows: auto;
-}
-h1 {
+body{
+    color: #325050;
+    background: #fff;
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 1.8em;
-    font-weight: lighter;
-    text-transform: uppercase;
+    font-size: 90%;
 }
 
-header {
-    height: 30vh;
-}
-
-.headTop {
-    background-image: url(../resources/enso.svg), url(../resources/gridlines-opaque.png), url(../resources/huntington.jpg);
-
-}
-
-main {
-    background-color: white;
-}
-
-.first {
-    background-color: white;
-}
-
-.htmlCssDownload {
-    background-color: white;
-}
-
-.road {
-    background-color: white;
-}
-
-.soWhat {
-    background-color: white;
-}
-
-.participation {
-    background-color: rgba(138, 188, 159, 0.5);
-}
-
-.benifits {
-    background-color: rgba(138, 188, 159, 0.5);
-}
-
-.requirments {
-    background-color: white;
-}
-
-.contents {
-    margin: 30px;
-}
-
-aside {
-    background-color: antiquewhite;
-    display: grid;
-    grid-gap: inherit;
-    grid-row: 4/5;
-}
-
-.shoutOutBoard {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: ;
-    background-color: lightgrey;
-}
-
-.card {
+header{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/contours@2x.png), url(../img/noise.png), url(../img/gridlines.png), url(../img/huntington.jpg);
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: 50%, auto, auto, cover;
+    background-position: top left;
+    background-attachment: fixed, fixed, fixed, scroll;
+    border-top: 10px solid darkslategrey;
 }
 
-.resourcesBoard {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    background-color: rgba(138, 188, 159, 0.5);
+header img{
+    width: 15%;
+    height: auto;
+    opacity: .8;
 }
 
-footer {
-    display: grid;
-    background-color: rgba(138, 188, 159, 0.5);
-    grid-template-rows: 2fr 1fr;
+header h1, h3{
+    text-align: center;
+    margin: 2%;    
 }
 
-.footerBanner {}
+header h1{
+    color: rgba(255,255,255);
+    margin-top: 1%;    
+}
 
-.social {
-    display: grid;
-    grid-template-columns: (5, 1fr);
+header h3{
+    font-style: italic;
+    font-family: 'Libre Baskerville', serif;    
+    color: rgba(255,255,255,0.6);
+}
+
+header .dottedUnderline{
+    border-bottom: 1px dotted rgba(255,255,255,0.6);
+}
+
+.container .dottedUnderline{
+    border-bottom: 1px dotted #325050;
+}
+
+.mainHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    margin-top: 0;
+}
+
+.viewAll{
+    display: flex;
+    justify-content: flex-end;
+    height: 8vh;
+    width: 100vw;
+    background-color: rgba(255,255,255, 0.3);
+}
+
+.viewAll button{
+    color: rgba(255,255,255, 0.6);
+    background-color: transparent;
+    border: none;
+}
+
+.allDesign{
+    width: 66.666667%;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: arrow;
+    width: 16.5%;
+    font-size: 55px;
+    color: #fff;
+}
+
+.container{
+    margin: 0 10%;
+    padding: 5% 0;
+}
+
+#even{
+    background-color: rgba(138,188,159,0.5);
+    background-image: url("../img/contours-opaque.png"), url("../img/gridlines-opaque.png"), url("../img/bamboo.png");
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 5% 10%;
+}
+
+.container h3{
+    text-align: left;
+    margin: 0;
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+.container p{
+    font-family: 'Libre Baskerville', sans-serif; 
+    line-height: 2em;
+    font-size: 90%;
+}
+
+a{
+    text-decoration: none;
+    color: #0d8ba1;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.hoverLink{
+    color: #325050;
+    transition: all .25s ease-out;
+}
+
+.hoverLink:hover{
+    text-decoration: underline;
+    color: #0d8ba1;
+}
+
+.downloadFileLinks{
+    color: #809b7e;
+    font-family: 'Julius Sans One', sans-serif;
+    padding: 2% 1% 1.2% 1%;
+    transition: all .25s ease-out;
+}
+
+.downloadFileLinks:hover{
+    background-color: #0d8ba1;
+    color: #fff;
+    text-decoration: none;
+}
+
+.downloadIcon{
+    font-family: arrow;
+    color: #a9b995;
+    background-color: #d9e1cd;
+    border-radius: 2px;
+    padding: 1%;
+    margin-right: 1%;
+}
+
+.downloadFileLinks:hover .downloadIcon{
+    color: #fff;
+    background-color: #0a7588;
+}
+
+.aboutDesigner{
+    background-image:  url("../img/contours@2x.png"), url("../img/gridlines.png"), url("../img/noise.png"), url("../img/koi.jpg");
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: 50%, auto, auto, cover;
+    background-attachment: fixed, fixed, scroll, scroll;
+    background-position: center left;
+    text-align: center;
+    color: rgba(255,255,255,0.6);
+    font-style: italic;
+    font-family: 'Libre Baskerville', serif; 
+    font-size: 1.6666em;
+    padding: 5%;
+    line-height: 2em;
+    margin: 0;
+}
+
+.circleLinkContainer{
+    display: flex;
+    justify-content: center;
+    font-family: arrow;
+    background-color: #134347;
+    margin: 0;
+    padding: 4%;
+}
+
+.circleLink{
+    padding: 3%;
+    font-size: 2.5em;
+    color: rgba(255,255,255,0.6);
 }
