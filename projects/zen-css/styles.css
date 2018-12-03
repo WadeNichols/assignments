@@ -25,7 +25,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/contours@2x.png), url(../img/noise.png), url(../img/gridlines.png), url(../img/huntington.jpg);
+    background-image: url("./assets/img/contours@2x.png"), url("./assets/img/noise.png"), url("./assets/img/gridlines.png"), url("./assets/img/huntington.jpg");
     background-repeat: repeat, repeat, repeat, no-repeat;
     background-size: 50%, auto, auto, cover;
     background-position: top left;
@@ -107,7 +107,7 @@ header .dottedUnderline{
 
 #even{
     background-color: rgba(138,188,159,0.5);
-    background-image: url("../img/contours-opaque.png"), url("../img/gridlines-opaque.png"), url("../img/bamboo.png");
+    background-image: url("./assets/img/contours-opaque.png"), url("./assets/img/gridlines-opaque.png"), url("../img/bamboo.png");
     background-repeat: repeat, repeat, no-repeat;
     background-size: auto, auto, cover;
     background-attachment: fixed;
@@ -175,7 +175,7 @@ a:hover{
 }
 
 .aboutDesigner{
-    background-image:  url("../img/contours@2x.png"), url("../img/gridlines.png"), url("../img/noise.png"), url("../img/koi.jpg");
+    background-image:  url("./assets/img/contours@2x.png"), url("./assets/img/gridlines.png"), url("./assets/img/noise.png"), url("./assets/img/koi.jpg");
     background-repeat: repeat, repeat, repeat, no-repeat;
     background-size: 50%, auto, auto, cover;
     background-attachment: fixed, fixed, scroll, scroll;
