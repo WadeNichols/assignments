@@ -33,11 +33,11 @@ header{
     border-top: 10px solid darkslategrey;
 }
 
-.header-image{
-    width: 15%;
+/* .header{
+    width: auto;
     height: auto;
     opacity: .8;
-}
+} */
 
 header h1, h3{
     text-align: center;
