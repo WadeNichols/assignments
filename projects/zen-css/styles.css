@@ -33,7 +33,7 @@ header{
     border-top: 10px solid darkslategrey;
 }
 
-header img{
+.header-image{
     width: 15%;
     height: auto;
     opacity: .8;
@@ -45,23 +45,16 @@ header h1, h3{
 }
 
 header h1{
-    color: rgba(255,255,255);
+    color: whitesmoke;
     margin-top: 1%;    
 }
 
 header h3{
     font-style: italic;
     font-family: 'Libre Baskerville', serif;    
-    color: rgba(255,255,255,0.6);
+    color: whitesmoke;
 }
 
-header .dottedUnderline{
-    border-bottom: 1px dotted rgba(255,255,255,0.6);
-}
-
-.container .dottedUnderline{
-    border-bottom: 1px dotted #325050;
-}
 
 .mainHeader{
     display: flex;
@@ -77,11 +70,11 @@ header .dottedUnderline{
     justify-content: flex-end;
     height: 8vh;
     width: 100vw;
-    background-color: rgba(255,255,255, 0.3);
+    background-color: whitesmoke;
 }
 
 .viewAll button{
-    color: rgba(255,255,255, 0.6);
+    color: whitesmoke;
     background-color: transparent;
     border: none;
 }
@@ -147,14 +140,14 @@ a:hover{
     color: #0d8ba1;
 }
 
-.downloadFileLinks{
+.downloadLinks{
     color: #809b7e;
     font-family: 'Julius Sans One', sans-serif;
     padding: 2% 1% 1.2% 1%;
     transition: all .25s ease-out;
 }
 
-.downloadFileLinks:hover{
+.downloadLinks:hover{
     background-color: #0d8ba1;
     color: #fff;
     text-decoration: none;
@@ -169,7 +162,7 @@ a:hover{
     margin-right: 1%;
 }
 
-.downloadFileLinks:hover .downloadIcon{
+.downloadLinks:hover .downloadIcon{
     color: #fff;
     background-color: #0a7588;
 }
@@ -181,7 +174,7 @@ a:hover{
     background-attachment: fixed, fixed, scroll, scroll;
     background-position: center left;
     text-align: center;
-    color: rgba(255,255,255,0.6);
+    color: whitesmoke;
     font-style: italic;
     font-family: 'Libre Baskerville', serif; 
     font-size: 1.6666em;
@@ -190,7 +183,7 @@ a:hover{
     margin: 0;
 }
 
-.circleLinkContainer{
+.footer-container{
     display: flex;
     justify-content: center;
     font-family: arrow;
@@ -199,8 +192,9 @@ a:hover{
     padding: 4%;
 }
 
-.circleLink{
+i{
     padding: 3%;
     font-size: 2.5em;
-    color: rgba(255,255,255,0.6);
+    color: whitesmoke;
+    opacity: .7;
 }
